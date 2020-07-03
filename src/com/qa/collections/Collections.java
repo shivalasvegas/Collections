@@ -3,14 +3,11 @@ package com.qa.collections;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// original code without main
+
 public class Collections {
 
-	public static void main(String[] args) {
-		hundredArray();
-		hundredArrayList();
-		multipliedArrayList();
-
-	}
+	
 	
 	static void hundredArray() {
 		int[] hunArray = new int[100];
