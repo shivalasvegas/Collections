@@ -9,6 +9,8 @@ public class CollectNumbers {
 	private int limit;
 	private boolean isPrint;
 	
+	Stream<Integer> streamNumbers; 
+	List<Integer> collectNumbers;
 	
 	public CollectNumbers() {
 		
@@ -21,11 +23,11 @@ public class CollectNumbers {
 	}
 	
 	public void collectStream() {
-	Stream<Integer> streamNumbers = 
+	streamNumbers = 
 			Stream.iterate(this.min, i -> i + 1)
 			.limit(this.limit);
 	
-	List<Integer> collectNumbers = streamNumbers
+	collectNumbers = streamNumbers
 			.collect(Collectors.toList());	
 	
 	if (isPrint) System.out.println(collectNumbers);
