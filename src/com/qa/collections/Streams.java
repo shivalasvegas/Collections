@@ -8,6 +8,7 @@ public class Streams {
 		CollectNumbers colNum = new CollectNumbers(1, 10, true);
 		
 		colNum.collectStream();
+		colNum.collectStreamTens();
 				
 	}
 
