@@ -23,7 +23,7 @@ public class CollectNumbers {
 		this.isPrint = isPrint;
 	}
 	
-	public void collectStream() {
+	public List<Integer> collectStream() {
 	this.streamNumbers = 
 			Stream.iterate(this.min, i -> i + 1)
 			.limit(this.limit);
@@ -32,12 +32,13 @@ public class CollectNumbers {
 			.collect(Collectors.toList());	
 	
 	if (isPrint) System.out.println(this.collectNumbers);
+	return this.collectNumbers;
 	
 	}
 	
-	public void collectStreamTens() {
-		//System.out.println(this.collectNumbers);
-		List<Integer> timesTen = 
+	public void collectStreamTens(List<Integer> timesTen) {
+		//System.out.println(this.collectNumbers
+		timesTen = 
 				this.collectNumbers.stream()
 					.map(x -> x*10)
 					.collect(Collectors.toList());

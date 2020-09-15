@@ -1,5 +1,6 @@
 package com.qa.collections;
 
+import java.util.List;
 
 public class Streams {
 
@@ -7,8 +8,8 @@ public class Streams {
 		
 		CollectNumbers colNum = new CollectNumbers(1, 10, true);
 		
-		colNum.collectStream();
-		colNum.collectStreamTens();
+		List<Integer> listNum = colNum.collectStream();
+		colNum.collectStreamTens(listNum);
 				
 	}
 
